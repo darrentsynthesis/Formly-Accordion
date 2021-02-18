@@ -1,11 +1,13 @@
-<p-accordion [multiple]="to.multiple || true" [style]="to.style" [styleClass]="to.styleClass"
-  [expandIcon]="to.expandIcon || 'pi pi-chevron-down'" [collapseIcon]="to.expandIcon || 'pi pi-chevron-up'" (onClose)="onClose($event)" (onOpen)="onOpen($event)">
+<p-accordion>
   <ng-container #fieldComponent></ng-container>
-    <ng-container *ngFor="let tab of field.fieldGroup; let index = index; let last = last;">
-      <p-accordionTab
-        [header]="tab.templateOptions.header"
-        [selected]="tab.templateOptions.selected || false"
-        [disabled]="tab.templateOptions.accordionDisabled">
+  <ng-container
+    *ngFor="let tab of field.fieldGroup; let index = index; let last = last;"
+  >
+    <p-accordionTab
+      [header]="tab.templateOptions.header"
+      [selected]="tab.templateOptions.selected || false"
+      [disabled]="tab.templateOptions.accordionDisabled"
+    >
       <formly-field [field]="tab"></formly-field>
     </p-accordionTab>
   </ng-container>

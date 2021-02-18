@@ -1,5 +1,6 @@
 import { Component, ViewChild, ViewContainerRef } from '@angular/core';
 import { FieldType } from '@ngx-formly/core';
+import "./accordion.component.scss";
 
 @Component({
   selector: 'app-accordion',

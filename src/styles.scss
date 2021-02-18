@@ -1,9 +1,15 @@
+@import "~primeng/resources/primeng.min.css";
+@import "~primeng/resources/themes/bootstrap/theme.css";
+@import "bootstrap-variables";
+// Import Bootstrap source files from node_modules
+@import "~bootstrap/scss/bootstrap";
 
-      @import '~primeng/resources/primeng.min.css';
-      @import '~primeng/resources/themes/bootstrap/theme.css';
-    
-body { padding: 10px; }
-@import '~@angular/material/prebuilt-themes/deeppurple-amber.css'; 
+/* jhipster-needle-scss-add-vendor JHipster will add new css style */
+
+body {
+  padding: 10px;
+}
+@import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
 
 /**  Copyright 2018 Google Inc. All Rights Reserved.
     Use of this source code is governed by an MIT-style license that
